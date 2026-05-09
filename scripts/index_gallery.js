@@ -115,7 +115,7 @@ let lightboxTitle = "";
 let imgFiles = ["images/frontyard.jpg", "images/backyard.jpg", "images/sideview.jpg", "images/condemnation1.jpg"];
 
 // Captions associated with each image
-let imgCaptions = new Array(4);
+let imgCaptions = new Array();
 imgCaptions[0]="Frontyard";
 imgCaptions[1]="Backyard";
 imgCaptions[2]="Side View";

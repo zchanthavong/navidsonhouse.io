@@ -10,7 +10,7 @@
 <link href="../css/house.css" rel="stylesheet">\
 <script src="../scripts/calender.js"></script>
 </head>
-<body>
+<body onload="activateCalendar()">
 <div class="container">
 	<div class="header">
 	<header>Navidson <span style=color:#0000FF>House</span></header>
@@ -32,66 +32,55 @@
 		<p>Every Halloween between 5 and 9 PM we like to turn this place in to a haunted <span style=color:#0000FF>house</span>. If you're ever trick-or-treating in the area, feel free to come in and experience the haunt. Wander through while getting chased by spooky scary skeletons, brain hangry zombies, the <a href="../secrets/asterion.html"><span style=color:#FF0000>minotaur</span></a>, bed sheet ghosts, and many more.</p>
 		<p>The bed and breakfast is closed during the event.</p>
 		<h3>OCT 2026</h3>
-		<table id="calender">
-		<thead>
-		<tr>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-		</thead>
+
+		<table id="calendar">
 		<tbody>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td id="10-01">1</td>
-			<td id="10-02">2</td>
-			<td id="10-03">3</td>
-		</tr>
-		<tr>
-			<td id="10-04">4</td>
-			<td id="10-05">5</td>
-			<td id="10-06">6</td>
-			<td id="10-07">7</td>
-			<td id="10-08">8</td>
-			<td id="10-09">9</td>
-			<td id="10-10">10</td>
-		</tr>
-		<tr>
-			<td id="10-11">11</td>
-			<td id="10-12">12</td>
-			<td id="10-13">13</td>
-			<td id="10-14">14</td>
-			<td id="10-15">15</td>
-			<td id="10-16">16</td>
-			<td id="10-17">17</td>
-		</tr>
-		<tr>
-			<td id="10-18">18</td>
-			<td id="10-19">19</td>
-			<td id="10-20">20</td>
-			<td id="10-21">21</td>
-			<td id="10-22">22</td>
-			<td id="10-23">23</td>
-			<td id="10-24">24</td>
-		</tr>
-		<tr>
-			<td id="10-25"><span style="color: #800080; text-decoration: line-through;">25</span></td>
-			<td id="10-26"><span style="color: #800080; text-decoration: line-through;">26</span></td>
-			<td id="10-27"><span style="color: #800080; text-decoration: line-through;">27</span></td>
-			<td id="10-28"><span style="color: #800080; text-decoration: line-through;">28</span></td>
-			<td id="10-29"><span style="color: #800080; text-decoration: line-through;">29</span></td>
-			<td id="10-30"><span style="color: #800080; text-decoration: line-through;">30</span></td>
-			<td id="10-31"><span style="color: #800080; text-decoration: line-through;">31</span></td>
-		</tr>
+			<tr>
+			<td></td><td></td><td></td><td></td>
+			<td class="open">1</td>
+			<td class="open">2</td>
+			<td class="open">3</td>
+			</tr>
+			<tr>
+			<td class="open">4</td>
+			<td class="open">5</td>
+			<td class="open">6</td>
+			<td class="open">7</td>
+			<td class="open">8</td>
+			<td class="open">9</td>
+			<td class="open">10</td>
+			</tr>
+			<tr>
+			<td class="open">11</td>
+			<td class="open">12</td>
+			<td class="open">13</td>
+			<td class="open">14</td>
+			<td class="open">15</td>
+			<td class="open">16</td>
+			<td class="open">17</td>
+			</tr>
+			<tr>
+			<td class="open">18</td>
+			<td class="open">19</td>
+			<td class="open">20</td>
+			<td class="open">21</td>
+			<td class="open">22</td>
+			<td class="open">23</td>
+			<td class="open">24</td>
+			</tr>
+			<tr>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">25</span></td>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">26</span></td>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">27</span></td>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">28</span></td>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">29</span></td>
+			<td class="closed"><span style="color: #800080; text-decoration: line-through;">30</span></td>
+			<td class="halloween">&#127875</td>
+			</tr>
 		</tbody>
 		</table>
+
+		<p><span id="messageBox">Click on a day</span></p>
 		<hr>
 	</main>
 	</div>

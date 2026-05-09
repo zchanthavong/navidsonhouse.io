@@ -1,0 +1,23 @@
+body { font-family: 'Times New Roman', 'Arial', sans-serif; margin: 20px; }
+    .layout { display: flex; gap: 20px; align-items: flex-start; }
+    .content { flex: 1; }
+
+.layout {
+  display: flex;
+  flex-direction: column; /* Stacks text on top of map */
+  align-items: left;    /* Centers the stack */
+}
+	
+
+
+/* THE FRAME */
+#map {
+   height: 300px; 
+   width: 400px;
+   border: 10px solid white; 
+   border-radius: 15px;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+   outline: 1px solid #ccc;
+   font-family: 'Times New Roman', 'Arial', sans-serif;
+}
+ 
